@@ -259,7 +259,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">Leading Population Health Improvement</h1>
-<p class="subtitle lead">A journey to becoming the best at getting better</p>
+<p class="subtitle lead">Reflections and tips from public health practice</p>
 </div>
 
 
@@ -287,7 +287,7 @@ div.csl-indent {
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1>
-<div class="cell" data-hash="index_cache/html/setup_802697dfe5521613c63a89b6b3ead0a8">
+<div class="cell" data-hash="index_cache/html/setup_924d56e91c01520d3cf0f0ab9ba72403">
 
 </div>
 <p>Since January 2021, I have served as the state public health officer and director of the California Department of Public Health. From January 2011 to December 2020, I was the health officer of the City and County of San Francisco and director of the Population Health Division at the San Francisco Department of Public Health.</p>
@@ -304,7 +304,7 @@ div.csl-indent {
 <ul>
 <li>1 Leadership foundations
 <ul>
-<li>Defining leadership</li>
+<li><input type="checkbox" disabled="">Defining leadership</li>
 <li>Theory of change</li>
 <li>Leadership philosophy</li>
 <li>True north compass</li>
@@ -408,7 +408,7 @@ div.csl-indent {
 <section id="r-code" class="level3">
 <h3 class="anchored" data-anchor-id="r-code">r code</h3>
 <p><a href="#fig-airquality">Figure&nbsp;<span>1</span></a> further explores the impact of temperature on ozone level.</p>
-<div class="cell" data-hash="index_cache/html/fig-airquality_14d9f476792c5e6da6dc19811e279ebc">
+<div class="cell" data-hash="index_cache/html/fig-airquality_0ed9ba5ce957718958ecc13511d289d9">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
@@ -430,18 +430,29 @@ div.csl-indent {
 </section>
 <section id="julia-code" class="level3">
 <h3 class="anchored" data-anchor-id="julia-code">julia code</h3>
+<div class="cell" data-hash="index_cache/html/unnamed-chunk-3_ba0d6a08dd6973354234ebbfd5952d35">
+<div class="cell-output cell-output-stderr">
+<pre><code>Julia version 1.8.0 at location /Applications/Julia-1.8.app/Contents/Resources/julia/bin will be used.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading setup script for JuliaCall...</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Finish loading setup script for JuliaCall.</code></pre>
+</div>
+</div>
 <p>Plot function pair (x(u), y(u)). See <a href="#fig-parametric">Figure&nbsp;<span>2</span></a> for an example.</p>
-<div class="cell" data-hash="index_cache/html/fig-parametric_4865b457eff92fb23593459b45208cb9">
+<div class="cell" data-hash="index_cache/html/fig-parametric_9ddae88e66e8aec1d91289ada1bdecc9">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(sin, </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>     <span class="fu">x-&gt;sin</span>(<span class="fl">2</span>x), </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>     <span class="fl">0</span>, </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>     <span class="fl">2</span>π, </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>     leg<span class="op">=</span><span class="cn">false</span>, </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>     fill<span class="op">=</span>(<span class="fl">0</span>,<span class="op">:</span>lavender))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(sin, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>     <span class="fu">x-&gt;sin</span>(<span class="fl">2</span>x), </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>     <span class="fl">0</span>, </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>     <span class="fl">2</span>π, </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>     leg<span class="op">=</span><span class="cn">false</span>, </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>     fill<span class="op">=</span>(<span class="fl">0</span>,<span class="op">:</span>lavender))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div id="fig-parametric" class="quarto-figure quarto-figure-center anchored">
@@ -456,19 +467,19 @@ div.csl-indent {
 <div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(<span class="fu">plot</span>(sin, x <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">2</span>x), <span class="fl">0</span>, <span class="fl">2</span>))</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(<span class="fu">plot</span>(x <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">4</span>x), y <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">5</span>y), <span class="fl">0</span>, <span class="fl">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(<span class="fu">plot</span>(sin, x <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">2</span>x), <span class="fl">0</span>, <span class="fl">2</span>))</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(<span class="fu">plot</span>(x <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">4</span>x), y <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">5</span>y), <span class="fl">0</span>, <span class="fl">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div id="fig-plots" class="cell quarto-layout-panel" data-hash="index_cache/html/fig-plots_de3e3b1fc8a63880c45c200a46bff6aa">
+<div id="fig-plots" class="cell quarto-layout-panel" data-hash="index_cache/html/fig-plots_6ffeff648df82f961bc54c22be864ff7">
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
 <div id="fig-plots-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="index_files/figure-html/fig-plots-J1.png" class="img-fluid figure-img" data-ref-parent="fig-plots"></p>
-<p></p><figcaption class="figure-caption">(a) Plot 1</figcaption><p></p>
+<p></p><figcaption class="figure-caption">(a) Plot 2</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -476,7 +487,7 @@ div.csl-indent {
 <div id="fig-plots-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="index_files/figure-html/fig-plots-J2.png" class="img-fluid figure-img" data-ref-parent="fig-plots"></p>
-<p></p><figcaption class="figure-caption">(b) Plot 2</figcaption><p></p>
+<p></p><figcaption class="figure-caption">(b) Plot 1</figcaption><p></p>
 </figure>
 </div>
 </div>
