@@ -22,6 +22,88 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -160,6 +242,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
   <ul class="collapse">
   <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a>
+  <ul class="collapse">
+  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">citations</a></li>
+  <li><a href="#tikz" id="toc-tikz" class="nav-link" data-scroll-target="#tikz">tikz</a></li>
+  <li><a href="#r-code" id="toc-r-code" class="nav-link" data-scroll-target="#r-code">r code</a></li>
+  <li><a href="#julia-code" id="toc-julia-code" class="nav-link" data-scroll-target="#julia-code">julia code</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -198,6 +287,9 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1>
+<div class="cell" data-hash="index_cache/html/setup_802697dfe5521613c63a89b6b3ead0a8">
+
+</div>
 <p>Since January 2021, I have served as the state public health officer and director of the California Department of Public Health. From January 2011 to December 2020, I was the health officer of the City and County of San Francisco and director of the Population Health Division at the San Francisco Department of Public Health.</p>
 <p>The lean DNA codes for the following:</p>
 <ol type="1">
@@ -221,8 +313,20 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Respect for people</li>
 <li>Shingo principles</li>
-<li>Transforming self and interpersonal relationships</li>
-<li>Transforming teams and organizations</li>
+<li>Transforming self and interpersonal relationships
+<ul>
+<li>humility</li>
+<li>reflective listening</li>
+<li>reflection</li>
+<li>trust</li>
+<li>courage</li>
+</ul></li>
+<li>Transforming teams and organizations
+<ul>
+<li>psychological safety</li>
+<li>accountability</li>
+<li>conflict</li>
+</ul></li>
 <li>Transforming communities</li>
 </ul></li>
 <li>3 Continuous improvement
@@ -278,11 +382,123 @@ ul.task-list li input[type="checkbox"] {
 <li>Probabilistic reasoning</li>
 <li>Implementation science</li>
 <li>Population health data science</li>
-<li>Artificial intelligence</li>
+<li>Artificial intelligenece</li>
 </ul></li>
 </ul>
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
+<section id="citations" class="level3">
+<h3 class="anchored" data-anchor-id="citations">citations</h3>
+<p>Here are some citations <span class="citation" data-cites="Aragon1998_BODI-Report Aragon2003_pmid12911836 Aragon2003_pmid14581921">[<a href="#ref-Aragon1998_BODI-Report" role="doc-biblioref">1</a>–<a href="#ref-Aragon2003_pmid14581921" role="doc-biblioref">3</a>]</span>.</p>
+</section>
+<section id="tikz" class="level3">
+<h3 class="anchored" data-anchor-id="tikz">tikz</h3>
+<div class="cell" data-engine.opts="{&quot;template&quot;:&quot;latex/tikz2pdf.tex&quot;}" data-hash="index_cache/html/unnamed-chunk-1_8697bdcf780306f627b67fc12cb95211">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Some caption</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="r-code" class="level3">
+<h3 class="anchored" data-anchor-id="r-code">r code</h3>
+<p><a href="#fig-airquality">Figure&nbsp;<span>1</span></a> further explores the impact of temperature on ozone level.</p>
+<div class="cell" data-hash="index_cache/html/fig-airquality_14d9f476792c5e6da6dc19811e279ebc">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(Temp, Ozone)) <span class="sc">+</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-airquality" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-airquality-1.png" class="img-fluid figure-img" width="768"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Temperature and ozone level.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="julia-code" class="level3">
+<h3 class="anchored" data-anchor-id="julia-code">julia code</h3>
+<p>Plot function pair (x(u), y(u)). See <a href="#fig-parametric">Figure&nbsp;<span>2</span></a> for an example.</p>
+<div class="cell" data-hash="index_cache/html/fig-parametric_4865b457eff92fb23593459b45208cb9">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(sin, </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>     <span class="fu">x-&gt;sin</span>(<span class="fl">2</span>x), </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>     <span class="fl">0</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>     <span class="fl">2</span>π, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>     leg<span class="op">=</span><span class="cn">false</span>, </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>     fill<span class="op">=</span>(<span class="fl">0</span>,<span class="op">:</span>lavender))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-parametric" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-parametric-J1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Parametric Plots</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>By default Julia cells will automatically print the value of their last statement (as with the example above where the call to <code>plot()</code> resulted in plot output). If you want to display multiple plots (or other types of output) from a single cell you should call the <code>display()</code> function explicitly. For example, here we output two plots side-by-side with sub-captions:</p>
+<div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Plots</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(<span class="fu">plot</span>(sin, x <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">2</span>x), <span class="fl">0</span>, <span class="fl">2</span>))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(<span class="fu">plot</span>(x <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">4</span>x), y <span class="op">-&gt;</span> <span class="fu">sin</span>(<span class="fl">5</span>y), <span class="fl">0</span>, <span class="fl">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="fig-plots" class="cell quarto-layout-panel" data-hash="index_cache/html/fig-plots_de3e3b1fc8a63880c45c200a46bff6aa">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-plots-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-plots-J1.png" class="img-fluid figure-img" data-ref-parent="fig-plots"></p>
+<p></p><figcaption class="figure-caption">(a) Plot 1</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-plots-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-plots-J2.png" class="img-fluid figure-img" data-ref-parent="fig-plots"></p>
+<p></p><figcaption class="figure-caption">(b) Plot 2</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Multiple Plots</figcaption><p></p>
+</figure>
+</div>
+</div>
 
 
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Aragon1998_BODI-Report" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Aragón T, Reiter R, Katcher B. San francisco burden of disease &amp; injury study: Mortality analysis 1990-1995 [Internet]. San Francisco Department of Public Health; 1998. Available from: <a href="http://bit.ly/SFDPH1998-BODI-Report">http://bit.ly/SFDPH1998-BODI-Report</a></div>
+</div>
+<div id="ref-Aragon2003_pmid12911836" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Aragón TJ, Ulrich S, Fernyak S, Rutherford GW. <a href="https://doi.org/10.1186/1471-2458-3-26">Risks of serious complications and death from smallpox vaccination: A systematic review of the united states experience, 1963-1968.</a> BMC public health. 2003 Aug;3:26. </div>
+</div>
+<div id="ref-Aragon2003_pmid14581921" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Aragón TJ, Fernyak SE. <a href="https://doi.org/10.1016/S0196064403008114">The risks and benefits of pre-event smallpox vaccination: Where you stand depends on where you sit.</a> Annals of emergency medicine. 2003 Nov;42:681–4. </div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
