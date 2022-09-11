@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Leading Population Health Improvement",
     "section": "",
-    "text": "Since January 2021, I have served as the state public health officer and director of the California Department of Public Health. From January 2011 to December 2020, I was the health officer of the City and County of San Francisco and director of the Population Health Division at the San Francisco Department of Public Health.\nThe lean DNA codes for the following:\n\nRespect for people (staff, community, client, patient)\nContinuous improvement (incremental and breakthrough)\nScientific thinking, problem solving, and innovation\nElimination of waste and undesired variability\nBeing agile, adaptive, and responsive to meet challenges\n\n\n\n\n1 Leadership foundations\n\nDefining leadership\nTheory of change\nLeadership philosophy\nTrue north compass\n\n2 Respect for people\n\nRespect for people\nShingo principles\nTransforming self and interpersonal relationships\n\nhumility\nreflective listening\nreflection\ntrust\ncourage\n\nTransforming teams and organizations\n\npsychological safety\naccountability\nconflict\n\nTransforming communities\n\n3 Continuous improvement\n\nContinuous improvement\nTrue north metrics\nResults-based accountability\nLean management\nLean production\n\n4 Scientific problem solving\n\nPDSA cycle\nDouble-loop learning\nLean thinking\nA3 reporting\nValidated learning\n\n5 Elimination of waste and variability\n\nIntroduction\nStandard work\nEight wastes\n5S\nProcess mapping\n\n6 Being agile, adaptive, and responsive\n\nIntroduction\nAgility\nAdaptiveness\nResponsiveness\n\n7 Decision intelligence\n\nWhat is DI?\nDecision quality overview\n\nFrame\nInformation\nAlternatives\nReasoning\nCommitment to action\nProspects\n\nStructured decision making\nDecisions under uncertainty\nDecisions under deep uncertainty\n\n8 Science and technology\n\nCausal inference\nProbabilistic reasoning\nImplementation science\nPopulation health data science\nArtificial intelligenece\n\n\n\n\n\n\n\nHere are some citations [1–3].\n\n\n\n\n\n\n\n\nSome caption\n\n\n\n\n\n\n\nFigure 1 further explores the impact of temperature on ozone level.\n\n\nCode\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\"\n)\n\n\n\n\n\nFigure 1: Temperature and ozone level.\n\n\n\n\n\n\n\n\n\nJulia version 1.8.0 at location /Applications/Julia-1.8.app/Contents/Resources/julia/bin will be used.\n\n\nLoading setup script for JuliaCall...\n\n\nFinish loading setup script for JuliaCall.\n\n\nPlot function pair (x(u), y(u)). See Figure 2 for an example.\n\n\nCode\nusing Plots\n\nplot(sin, \n     x->sin(2x), \n     0, \n     2π, \n     leg=false, \n     fill=(0,:lavender))\n\n\n\n\n\nFigure 2: Parametric Plots\n\n\n\n\nBy default Julia cells will automatically print the value of their last statement (as with the example above where the call to plot() resulted in plot output). If you want to display multiple plots (or other types of output) from a single cell you should call the display() function explicitly. For example, here we output two plots side-by-side with sub-captions:\n\n\nCode\nusing Plots\n\ndisplay(plot(sin, x -> sin(2x), 0, 2))\ndisplay(plot(x -> sin(4x), y -> sin(5y), 0, 2))\n\n\n\n\n\n\n\n\n(a) Plot 2\n\n\n\n\n\n\n\n(b) Plot 1\n\n\n\n\nFigure 3: Multiple Plots\n\n\n\n\n\n\n\n1. Aragón T, Reiter R, Katcher B. San francisco burden of disease & injury study: Mortality analysis 1990-1995 [Internet]. San Francisco Department of Public Health; 1998. Available from: http://bit.ly/SFDPH1998-BODI-Report\n\n\n2. Aragón TJ, Ulrich S, Fernyak S, Rutherford GW. Risks of serious complications and death from smallpox vaccination: A systematic review of the united states experience, 1963-1968. BMC public health. 2003 Aug;3:26. \n\n\n3. Aragón TJ, Fernyak SE. The risks and benefits of pre-event smallpox vaccination: Where you stand depends on where you sit. Annals of emergency medicine. 2003 Nov;42:681–4."
+    "text": "Since January 2021 to the present, I have served as the state public health officer and director of the California Department of Public Health. From January 2011 to December 2020, I was the health officer of the City and County of San Francisco and director of the Population Health Division at the San Francisco Department of Public Health. From 2003 to 2010, I directed a public health infectious disease emergency preparedness and response center focused on research and training at the University of California, Berkeley School of Public Health. I spent several years studying and preparing others to respond to pandemics from an infectious respiratory pathogen. During this time I developed an interest in complex decision making under uncertainty and time constraints.\nThe lean DNA encodes for the following elements:\n\nRespect for people (staff, community, client, patient)\nContinuous improvement (incremental and breakthrough)\nScientific thinking, problem solving, and innovation\nElimination of waste and undesired variability\nBeing agile, adaptive, and responsive to meet challenges\n\nTomás Aragón, MD, DrPH\nState Public Health Officer and Director\nCalifornia Department of Public Health\nSacramento, California, USA\nClinical Assistant Professor\nSchool of Public Health\nUniversity of California, Berkeley, USA\n\n\n\n\n\nHere are some citations [1–3].\n\n\n\n\n\n\nFigure 1: tikz figure caption\n\n\n\n\n\nPlot function pair (x(u), y(u)). See Figure 2 for an example.\n\n\nCode\nusing Plots\n\nplot(sin, \n     x->sin(2x), \n     0, \n     2π, \n     leg=false, \n     fill=(0,:lavender))\n\n\n\n\n\nFigure 2: Parametric Plots\n\n\n\n\nBy default Julia cells will automatically print the value of their last statement (as with the example above where the call to plot() resulted in plot output). If you want to display multiple plots (or other types of output) from a single cell you should call the display() function explicitly. For example, here we output two plots side-by-side with sub-captions:\n\n\nCode\nusing Plots\n\ndisplay(plot(sin, x -> sin(2x), 0, 2))\ndisplay(plot(x -> sin(4x), y -> sin(5y), 0, 2))\n\n\n\n\n\n\n\n\n(a) Plot 2\n\n\n\n\n\n\n\n(b) Plot 1\n\n\n\n\nFigure 3: Multiple Plots\n\n\n\n\n\n\n\n1. Aragón T, Reiter R, Katcher B. San francisco burden of disease & injury study: Mortality analysis 1990-1995 [Internet]. San Francisco Department of Public Health; 1998. Available from: http://bit.ly/SFDPH1998-BODI-Report\n\n\n2. Aragón TJ, Ulrich S, Fernyak S, Rutherford GW. Risks of serious complications and death from smallpox vaccination: A systematic review of the united states experience, 1963-1968. BMC public health. 2003 Aug;3:26. \n\n\n3. Aragón TJ, Fernyak SE. The risks and benefits of pre-event smallpox vaccination: Where you stand depends on where you sit. Annals of emergency medicine. 2003 Nov;42:681–4."
   },
   {
     "objectID": "acknowledgments.html",
@@ -18,34 +18,76 @@
     "href": "acknowledgments.html#organizations-or-associations",
     "title": "Acknowledgments",
     "section": "Organizations or associations",
-    "text": "Organizations or associations\n\nCalifornia Healthcare Foundation (CHCF) and Health- force Center at UCSF (leadership fellowship)\nNational Association of County and City Health Officials (NACCHO)\nBig Cities Health Coalition (BCHC) and “Survive and Thrive” (leadership fellowship)\nKresge Foundation Emerging Leaders in Public Health (ELPH) (leadership fellowship)\nCenter for Health Leadership and Practice (executive leadership training)\nCalifornia Department of Public Health\nCalifornia Conference of Local Health Officers(CCLHO), and Health Officers Association of California (HOAC)\nCalifornia Health Executives Association of California (CHEAC)\nAssociation of Bay Area Health Officials (ABAHO)\nUniversity of California, Berkeley School of Public Health\nUniversity of California, San Francisco\nSan Francisco Department of Public Health"
+    "text": "Organizations or associations\n\nde Beaumont Foundation\nKresge Foundation, Emerging Leaders in Public Health (ELPH) (leadership fellowship)\nNational Association of County and City Health Officials (NACCHO)\nBig Cities Health Coalition (BCHC) and “Survive and Thrive” (leadership fellowship)\nUniversity of California, Berkeley School of Public Health\nUniversity of California, San Francisco\nCalifornia Healthcare Foundation (CHCF) and Health- force Center at UCSF (leadership fellowship)\nCenter for Health Leadership and Practice (executive leadership training), Public Health Institute\nCalifornia Department of Public Health\nCalifornia Health Executives Association of California (CHEAC)\nCalifornia Conference of Local Health Officers (CCLHO) and Health Officers Association of California (HOAC)\nAssociation of Bay Area Health Officials (ABAHO)\nSan Francisco Department of Public Health"
   },
   {
     "objectID": "acknowledgments.html#selected-people-in-alphabetical-order-by-last-name",
     "href": "acknowledgments.html#selected-people-in-alphabetical-order-by-last-name",
     "title": "Acknowledgments",
     "section": "Selected people (in alphabetical order by last name)",
-    "text": "Selected people (in alphabetical order by last name)\n\nDeitre Epps\nBonnie Jacobson\nErica Lorie\nJoanna Omi\nMike Rona\nMonica Sharma\nCraig Vercruysse"
+    "text": "Selected people (in alphabetical order by last name)\n\nBrian Castrucci, de Beaumont Foundation\nDeitre Epps,\nSusan Ehrlich, Zuckerberg San Francisco\nBonnie Jacobson, University of California, San Francisco\nErica Lorie, Moss Adams\nJoanna Omi, Moss Adams\nMike Rona, Rona Consulting\nMonica Sharma,\nCraig Vercruysse, Moss Adams"
   },
   {
     "objectID": "acknowledgments.html#selected-authors-in-alphabetical-order-by-last-name",
     "href": "acknowledgments.html#selected-authors-in-alphabetical-order-by-last-name",
     "title": "Acknowledgments",
     "section": "Selected authors (in alphabetical order by last name)",
-    "text": "Selected authors (in alphabetical order by last name)\n\nKim Barnes\nLisa Feldman Barrett\nMark Friedman,\nDaniel Kahneman\nJeffrey Liker, The Toyota Way\nMichael Maccoby\nEric Ries, Lean Startup\nMike Rother, The Improvement Kata\nEdgar Schein\nPeter Senge\nJohn Toussaint"
+    "text": "Selected authors (in alphabetical order by last name)\n\nKim Barnes\nLisa Feldman Barrett\nMark Friedman,\nDaniel Kahneman\nJeffrey Liker, The Toyota Way\nMichael Maccoby,\nEric Ries, Lean Startup\nMike Rother, The Improvement Kata\nEdgar Schein,\nPeter Senge, The Fifth Discipline\nJohn Toussaint"
   },
   {
     "objectID": "0_introduction.html",
     "href": "0_introduction.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "See [knuth84?] for additional discussion of literate programming."
+    "text": "See ZZZ for additional discussion of literate programming."
   },
   {
-    "objectID": "1_theory_of_change.html",
-    "href": "1_theory_of_change.html",
+    "objectID": "1_transformation_theory_of_change.html",
+    "href": "1_transformation_theory_of_change.html",
     "title": "3  Theory of change",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "1. Aragón T, Reiter R, Katcher B. San francisco\nburden of disease & injury study: Mortality analysis 1990-1995\n[Internet]. San Francisco Department of Public Health; 1998. Available\nfrom: http://bit.ly/SFDPH1998-BODI-Report\n\n\n2. Aragón TJ, Ulrich S, Fernyak S, Rutherford GW.\nRisks of serious\ncomplications and death from smallpox vaccination: A systematic review\nof the united states experience, 1963-1968. BMC public health. 2003\nAug;3:26. \n\n\n3. Aragón TJ, Fernyak SE. The risks and benefits\nof pre-event smallpox vaccination: Where you stand depends on where you\nsit. Annals of emergency medicine. 2003 Nov;42:681–4."
+  },
+  {
+    "objectID": "appx_templates.html",
+    "href": "appx_templates.html",
+    "title": "Appendix A — Lean reporting templates",
+    "section": "",
+    "text": "In lean, standard work is ``the agreed-upon, best-known, least wasteful way of doing the work today until a better way is found.’’ Standard work provides a structure to communicate, train, practice, and deliver an expected sequence of tasks. Standard work becomes the basis or baseline for learning and continuous improvement. The templates below are the standard work for briefing the CDPH directorate. They provide simple frameworks for organizing yourself.\n\n\n\nPDSA stands for Plan-Do-Study-Act. PDSA is the scientific method and we have been using it all our lives. PDSA thinking and problem solving is part of human nature: it is how we try things, learn, adapt, and improve. Of the six templates, three are organized using PDSA so one can see the process of planning, predicting, experimenting, learning, and improving."
+  },
+  {
+    "objectID": "appx_templates.html#situation-update",
+    "href": "appx_templates.html#situation-update",
+    "title": "Appendix A — Lean reporting templates",
+    "section": "A.2 Situation update",
+    "text": "A.2 Situation update\nSituation updates are very concise and can be delivered on-the-spot orally, or in written form.\n\nA.2.1 SBAR (1 of 6)\n\nSituation (“Here’s the situation.”)\nBackground (“Here’s some background.”)\nAssessment (“Here’s what we learned.”)\nResponse to date (“Here’s what we did.”)\nReadiness (“Here’s what we are doing to prepare further.”)\nRecommendations (“Here are our recommendations.”)"
+  },
+  {
+    "objectID": "appx_templates.html#problem-solving",
+    "href": "appx_templates.html#problem-solving",
+    "title": "Appendix A — Lean reporting templates",
+    "section": "A.3 Problem solving",
+    "text": "A.3 Problem solving\n\nA.3.1 A3 thinking/reporting (2 of 6)\n\n\n\n\n\n\n\n\nPDSA\nNo.\nComponents\n\n\nPlan\n1\nProblem statement (does not include causes or solutions)\n\n\n\n2\nBackground\n\n\n\n3\nCurrent condition\n\n\n\n4\nGoal and next target condition\n\n\n\n5\nAnalysis (gap and root causes)\n\n\n\n6\nProposed countermeasures (theory of change; evidence-based)\n\n\nDo\n7\nImplementation plan (theory of action; implementation science)\n\n\nStudy and Act\n8\nValidated learning and improving (PDSA cycles)\n\n\n\n\n\nA.3.2 Results-based thinking/reporting (adapted from Results-Based Accountability) (3 of 6)\nPDSA No. Components Plan 1 2 3 4 5 6 What are we trying to accomplish and why? (goals and motivation) How do we measure success? (how much?, how well?, better off?) What are the drivers? (theory of causation; root causes) What partners can help? (collective action and impact) What other conditions must exist? (assumptions and risks) What strategies work? (theory of change; evidence-based) Do 7 Implementation plan (theory of action; implementation science) Study and Act 8 Validated learning and improving (PDSA cycles)\n\n\nA.3.3 Decision making (with six decision quality requirements) (4 of 6)\nPDSA No. Components Plan 1 2 3 4 5 6 Frame (What are we deciding and why?) Prospects (What results, impacts and future states do we care about?) Information (What do we need to know?) Alternatives (What creative, doable choices do we have?) Reasoning (How will we prioritize or make selection?) Proposed actions (And, is there commitment to action?) Do 7 Implementation plan (theory of action; implementation science) Study and Act 8 Validated learning and improving (PDSA cycles)"
+  },
+  {
+    "objectID": "appx_templates.html#strategic-execution-project-management",
+    "href": "appx_templates.html#strategic-execution-project-management",
+    "title": "Appendix A — Lean reporting templates",
+    "section": "A.4 Strategic execution (project management)",
+    "text": "A.4 Strategic execution (project management)\n4SQ is concise, and was derived from the United Nations results-based management approach.\n\nA.4.1 4 Strategic Questions (4SQ) (5 of 6)\n\nWhat are we trying to accomplish and why? (goals; alignment to values, mission, vision)\nHow do (or will we) we measure success? (lead and lag indicators)\nWhat other conditions must exist? (assumptions and risks)\nHow do we get there? (key strategies and implementation plan)"
+  },
+  {
+    "objectID": "appx_templates.html#program-center-or-office-introduction-or-update-6-or-6",
+    "href": "appx_templates.html#program-center-or-office-introduction-or-update-6-or-6",
+    "title": "Appendix A — Lean reporting templates",
+    "section": "A.5 Program, Center, or Office introduction or update (6 or 6)",
+    "text": "A.5 Program, Center, or Office introduction or update (6 or 6)\nWhat are your core values, mission (or purpose), vision, principles, and strategic priorities? Select key challenges or problems your team is tackling and use a template from page 2. As a lean leader, starting with self, how are you developing your people to solve problems and improve performance (improve processes and results)? This is called Leader Standard Work."
   }
 ]
